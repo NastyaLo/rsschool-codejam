@@ -1,0 +1,24 @@
+{
+  "name": "rsschool-codejam",
+  "version": "1.0.0",
+  "description": "codejam-3",
+  "main": "sumOfOther.js",
+  "dependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NastyaLo/rsschool-codejam.git"
+  },
+  "author": "loyko2802@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NastyaLo/rsschool-codejam/issues"
+  },
+  "homepage": "https://github.com/NastyaLo/rsschool-codejam#readme"
+}

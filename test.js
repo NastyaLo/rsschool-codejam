@@ -1,5 +1,5 @@
 const assert = require('assert');
-const sumOfOther = require('./../sumOfOther');
+const sumOfOther = require('./sumOfOther');
 
 describe('Check sum of other elements task', () => {
   it('1', () => {

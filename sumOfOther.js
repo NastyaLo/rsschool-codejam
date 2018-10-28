@@ -1,15 +1,15 @@
 module.exports = function sumOfOther(inputArray) {
-    let resultArray = [];
+  const resultArray = [];
 
-    for(let i = 0; i < inputArray.length; i++) {
-        let sumOfRemaining = 0;
+  for (let i = 0; i < inputArray.length; i += 1) {
+    let sumOfRemaining = 0;
 
-        inputArray.forEach((element, index) => {
-            if(index != i) sumOfRemaining += element;
-        });
+    inputArray.forEach((element, index) => {
+      if (index !== i) sumOfRemaining += element;
+    });
 
-        resultArray.push(sumOfRemaining);
-    };
+    resultArray.push(sumOfRemaining);
+  }
 
-    return resultArray;
+  return resultArray;
 };

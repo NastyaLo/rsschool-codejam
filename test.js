@@ -1,5 +1,22 @@
 const assert = require('assert');
 const sumOfOther = require('./sumOfOther');
+const make = require('./make');
+
+const sum = function sum(a, b) {
+  return a + b;
+};
+
+const difference = function difference(a, b) {
+  return a - b;
+};
+
+const multiplication = function multiplication(a, b) {
+  return a * b;
+};
+
+const division = function division(a, b) {
+  return a / b;
+};
 
 describe('Check sum of other elements task', () => {
   it('1', () => {
@@ -20,5 +37,27 @@ describe('Check sum of other elements task', () => {
   it('4', () => {
     const sumOfOtherElems = sumOfOther([0, 0, 0, 0, 0, 0, 0]);
     assert.equal(sumOfOtherElems.toString(), [0, 0, 0, 0, 0, 0, 0].toString());
+  });
+});
+
+describe('Check with items storage', () => {
+  it('1', () => {
+    const makeSum = make(15)(34, 21, 666)(41)(sum);
+    assert.equal(makeSum, 777);
+  });
+
+  it('2', () => {
+    const makeDifference = make(5)(10)(13, 666)(1)(difference);
+    assert.equal(makeDifference, -685);
+  });
+
+  it('3', () => {
+    const makeMultiplication = make(1)(2)(3)(4)(5)(multiplication);
+    assert.equal(makeMultiplication, 120);
+  });
+
+  it('4', () => {
+    const makeDivision = make(120)(3)(2)(5)(division);
+    assert.equal(makeDivision, 4);
   });
 });
